@@ -7,34 +7,34 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	Integer userId;
-	String userName;
-	String userPassword;
+	Integer userid;
+	String username;
+	String userpassword;
 	String email;
 	String phone;
 
 	public Integer getUserId() {
-		return userId;
+		return userid;
 	}
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUserId(Integer userid) {
+		this.userid = userid;
 	}
 
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 	public String getUserPassword() {
-		return userPassword;
+		return userpassword;
 	}
 
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+	public void setUserPassword(String userpassword) {
+		this.userpassword = userpassword;
 	}
 
 	public String getEmail() {
@@ -53,11 +53,11 @@ public class User {
 		this.phone = phone;
 	}
 
-	public User(Integer userId, String userName, String userPassword, String email, String phone) {
+	public User(Integer userid, String username, String userpassword, String email, String phone) {
 		super();
-		this.userId = userId;
-		this.userName = userName;
-		this.userPassword = userPassword;
+		this.userid = userid;
+		this.username = username;
+		this.userpassword = userpassword;
 		this.email = email;
 		this.phone = phone;
 	}
