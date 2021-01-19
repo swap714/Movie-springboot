@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.1</version>
+		<version>2.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.movie</groupId>
-	<artifactId>MovieBooking</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>movieTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MovieBooking</name>
-	<description>Project for Online Movie Booking System</description>
+	<name>movieTest</name>
+	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>14</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -23,38 +23,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 
-		<!-- <dependency>
+<!-- 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-		</dependency> -->
-		
-		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
-		<dependency>
-		    <groupId>org.mariadb.jdbc</groupId>
-		    <artifactId>mariadb-java-client</artifactId>
-		    <version>2.6.1</version>
 		</dependency>
-
+ -->		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-rest -->
-		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-data-rest</artifactId>
-		    <version>2.3.7.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+			<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
+		<dependency>
+		    <groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
+		    </dependency>
 		
 	</dependencies>
 

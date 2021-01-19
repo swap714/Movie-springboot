@@ -1,13 +1,14 @@
-package com.mbooking.Entities;
+package com.example.demo.modal;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
-@Table(name = "user")
-public class User {
-	
+public class User 
+{
 	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	Integer userId;
 	
 	String userName;
@@ -58,20 +59,12 @@ public class User {
 		this.phone = phone;
 	}
 
-	public User(Integer userId, String userName, String userPassword, String email, String phone) {
-		
-		this.userId = userId;
-		this.userName = userName;
-		this.userPassword = userPassword;
-		this.email = email;
-		this.phone = phone;
-	}
-
-	public User() {
-		
-		// TODO Auto-generated constructor stub
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", userPassword=" + userPassword + ", email="
+				+ email + ", phone=" + phone + "]";
 	}
 
 	
-	
+
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.mbooking.Entities.User;
 import com.mbooking.Repositories.UserRepo;
@@ -20,6 +21,47 @@ public class UserService {
 	}
 	
 	
+	public User addUser(@RequestBody User user)
+ 	{
+
+	if(userRepo.existsById(user.getUserId()))
+  		
+		user.setUserId(0);
+		
+		else		
+			userRepo.save(user);
+	 return user;
+ 	}
+	
+	public String removeUser(User userId) {
+		
+		userRepo.delete(userId);
+		return userId+" deleted";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public User addUser(@RequestBody User user)
+//     	{
+//
+//		if(userRepo.existsById(user.getUserId()))
+//	  		
+//  			user.setUserId(0);
+//  		
+//  		else
+//  			 userRepo.save(user);
+//		 return user;
+//     	}
+//	
+
 
 //    User findByEmail(String email);
 //
@@ -31,7 +73,8 @@ public class UserService {
 //
 //    void update(User user);
 //
-//    void add(User user);
-    
-    
+//      void add(User user);
+      
+      
+  	
 }
